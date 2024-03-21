@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cart = document.querySelector('.cartbar');
+        document.querySelector(".cartbutton").onclick = () => {
+            cart.classList.toggle('active');
+        }
+    </script>
+    <style>
+        body {
+            background-image: url('pngwing.com (1).png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #971f1f;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+/*
+        .footer {
+            position: absolute;
+            height: 120px;
+            width: 100%;
+            background-color: #971f1f;
+            color: white;
+            text-align: center;
+            padding: 0 ;
+            border:0 ;
+            margin:0 ;
+        }*/
+
+        .Girl_Pic {
+            width: 400px;
+        }
+
+        .Main {
+            display: flex;
+            direction: row;
+            align-content: center;
+            justify-content: space-around;
+            height: 800px;
+        }
+
+        #box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            height: 700px;
+            padding: 0px;
+            margin: 20px;
+        }
+
+        .heading {
+            font-size: 50px;
+        }
+
+        /* .navbar{
+        position: fixed;
+       }
+       /*.cartbar{
+        width: 30rem;
+        height: 5rem;
+        background: #111;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 10%;
+        border-radius: 25px; 
+        border: #971f1f 2px solid;
+        right: 5%;
+        transition: 1s;
+        font-size:20px ;
+        color: aliceblue;
+        z-index: 10000;
+         }
+       .cartbar.active{
+        right: -95%;
+       }        */
+        .men {
+            background-color: black;
+        }
+        .Mens {
+            border-top: 2px solid blueviolet ;
+            background-color: white;
+            display: flex;
+            direction: row;
+            height: 720px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+  align-content: space-between;
+        }
+        .items {
+            display: flex;
+           
+            flex-direction: column ;
+          flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 280px;
+            height: 300px;
+            padding: 0px;
+            margin: 20px;
+            border: 2px solid rgb(138, 134, 134);
+        }
+        .button{
+         /*   position:relative ;
+            bottom: 10px;
+            left: 60px;*/
+            border: none;
+            outline:none;
+           
+        }
+        .items-pic{
+            width: 200px;
+        }
+        .price
+        {
+           /* position:relative ;
+            bottom: -140px;
+            left: -180px; */  
+            margin: 8px;
+        }
+        .footer{
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #971f1f;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="navbar">
+        <li><a href="">Fashion</a></li>
+        <li style="float:centre"><a href="">Men</a></li>
+        <li style="float:centre"><a href="">Contact</a></li>
+        <li class="cartbutton" style="float:right"><a href="">Cart</a></li>
+    </ul>
+
+    <div class="Main">
+        <div id="box">
+            <h1 class="heading">"Fashion Website" </h1>
+        </div>
+        <div id="box"><img class="Girl_Pic" src="pngwing.com.png" alt=""></div>
+    </div>
+    <section class="Men">
+        <div class="Mens">
+            <div class="items"> 
+                <div><img class="items-pic" src="pngwing.com (3).png" alt=""></div>
+                <div class="price">$10</div>
+                <div > <button class="button" > <a href="https://www.w3schools.com/"> Add Cart</a> </button></div>
+
+            </div>
+            <div class="items"> 
+                <div><img class="items-pic" src="pngwing.com (3).png" alt=""></div>
+                <div class="price">$10</div>
+                <div > <button class="button"> Add Cart</button></div> </div>
+            <div class="items">
+                <div><img class="items-pic" src="pngwing.com (3).png" alt=""></div> 
+                <div class="price">$10</div>
+                <div > <button class="button" > Add Cart</button></div>
+            </div>
+            <div class="items"> 
+                <div><img class="items-pic" src="pngwing.com (3).png" alt=""></div>
+                <div class="price">$10</div>
+                <div > <button class="button"> Add Cart</button></div>
+            </div>
+            <div class="items"> 
+                <div><img class="items-pic" src="pngwing.com (3).png" alt=""></div>
+                <div class="price">$10</div>
+                <div > <button class="button"> Add Cart</button></div>
+            </div>
+            <div class="items">
+                <div><img class="items-pic" src="pngwing.com (3).png" alt=""></div> 
+                <div class="price">$10</div>
+                <div > <button class="button"> Add Cart</button></div>
+            </div>
+        </div>
+    </section>
+<section>
+    <div class="footer">
+<h1>footer</h1>
+    </div>
+</section>
+   
+
+</body>
+
+</html>
